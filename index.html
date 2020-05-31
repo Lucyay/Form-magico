@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Super form</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<!-- Nel doubt si adda tutto -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	<div class="container-fluid p-3 my-3 bg-success text-white">
+	  <h1>Super form super utile</h1>
+	  <p>Testo inutile precedente il form inutile al solo fine di mostrare le potenzialità di questo fantastico container.</p>
+	</div>
+	<div class="container p-4 bg-">
+		<form action="/action_page.php">
+		  <div class="form-group">
+		    <label for="email">Nome:</label>
+		    <input type="text" class="form-control" placeholder="Inserisci nome" id="nome">
+		  </div>
+		  <div class="form-group">
+		    <label for="pwd">Età:</label>
+		    <input type="text" class="form-control" placeholder="Inserisci età" id="età">
+		  </div>
+		  <div class="form-group">
+		    <label for="pwd">Città:</label>
+		    <input type="text" class="form-control" placeholder="Inserisci la città di nascita" id="città">
+		  </div>
+		</form>
+		<button type="button" class="btn btn-outline-success" onclick="megicfunzion()">Premimi</button>
+	</div>
+
+<div class="container-fluid p-3 bg-warning">
+  <h1 id="spoilerone">Qui ci sarà la tua fantastica frase:</h1>
+  <p id="testo"></p>
+</div>
+
+	<script>
+	function megicfunzion() {
+	  var x = document.getElementById("nome").value;
+	  var y = document.getElementById("età").value;
+	  var z = document.getElementById("città").value;
+	  document.getElementById("spoilerone").innerHTML = "Qui c'è la tua fantastica frase:";
+	  document.getElementById("testo").innerHTML = "Ciao "+x+"! Hai "+y+ " anni e sei nato a "+z+".";
+	}
+	</script>
+</body>
+</html>
